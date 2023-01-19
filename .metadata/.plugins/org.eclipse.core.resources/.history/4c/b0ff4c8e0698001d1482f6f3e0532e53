@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+#define HWREG(x)            (*(( volatile unsigned long *) (x)))
+#define SYSCTL_RCGCGPIO_R   0x400FE608
+#define GPIO_PORTF_DATA_R   0x40025038
+#define GPIO_PORTF_DIR_R    0x40025400
+#define GPIO_PORTF_DEN_R    0x4002551C
+
+int main(void)
+{
+    HWREG(SYSCTL_RCGCGPIO_R) |= 0x20;
+    HWREG(GPIO_POR)
+	return 0;
+}
