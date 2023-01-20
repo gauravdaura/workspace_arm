@@ -11,6 +11,7 @@ GEN_CMDS__FLAG :=
 
 ORDERED_OBJS += \
 "./contact.obj" \
+"./led.obj" \
 "./main.obj" \
 "./tm4c123gh6pm_startup_ccs.obj" \
 "../tm4c123gh6pm.cmd" \
@@ -156,8 +157,8 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "contact.obj" "main.obj" "tm4c123gh6pm_startup_ccs.obj" 
-	-$(RM) "contact.d" "main.d" "tm4c123gh6pm_startup_ccs.d" 
+	-$(RM) "contact.obj" "led.obj" "main.obj" "tm4c123gh6pm_startup_ccs.obj" 
+	-$(RM) "contact.d" "led.d" "main.d" "tm4c123gh6pm_startup_ccs.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
