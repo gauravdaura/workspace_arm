@@ -3,7 +3,7 @@
 
 #define HWREG(x)            (*(( volatile unsigned long *) (x)))
 
-#define SYSCTL_RCGCGPIO_R   0x400FE608
+#define SYSCTL_RCGCGPIO     0x400FE608
 #define GPIO_PORTA_BASE     0x40004000
 #define GPIO_PORTB_BASE     0x40005000
 #define GPIO_PORTC_BASE     0x40006000

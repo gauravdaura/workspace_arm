@@ -669,3 +669,429 @@ Finished building target: "2_GPIO_BUTTON.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../led.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="led.d_raw"  "../led.c"
+"../led.c", line 13: warning #121-D: return value type does not match the function type
+Finished building: "../led.c"
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../contact.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="contact.d_raw"  "../contact.c"
+Finished building: "../contact.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../contact.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="contact.d_raw"  "../contact.c"
+Finished building: "../contact.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../led.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="led.d_raw"  "../led.c"
+Finished building: "../led.c"
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../contact.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="contact.d_raw"  "../contact.c"
+Finished building: "../contact.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../contact.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="contact.d_raw"  "../contact.c"
+Finished building: "../contact.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../contact.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="contact.d_raw"  "../contact.c"
+Finished building: "../contact.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../contact.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="contact.d_raw"  "../contact.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'contact.obj' failed
+"../contact.c", line 39: error #20: identifier "SYSCTL_RCGCGPIO" is undefined
+"../contact.c", line 63: error #20: identifier "uiResult" is undefined
+"../contact.c", line 63: warning #121-D: return value type does not match the function type
+2 errors detected in the compilation of "../contact.c".
+gmake: *** [contact.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../contact.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="contact.d_raw"  "../contact.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'contact.obj' failed
+"../contact.c", line 39: error #20: identifier "SYSCTL_RCGCGPIO" is undefined
+"../contact.c", line 63: error #20: identifier "uiResult" is undefined
+"../contact.c", line 63: warning #121-D: return value type does not match the function type
+2 errors detected in the compilation of "../contact.c".
+gmake: *** [contact.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../contact.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="contact.d_raw"  "../contact.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'contact.obj' failed
+"../contact.c", line 63: error #20: identifier "uiResult" is undefined
+"../contact.c", line 63: warning #121-D: return value type does not match the function type
+1 error detected in the compilation of "../contact.c".
+gmake: *** [contact.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../contact.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="contact.d_raw"  "../contact.c"
+"../contact.c", line 63: warning #121-D: return value type does not match the function type
+Finished building: "../contact.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../contact.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="contact.d_raw"  "../contact.c"
+Finished building: "../contact.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: '2_GPIO_BUTTON.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../contact.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="contact.d_raw"  "../contact.c"
+Finished building: "../contact.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../contact.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="contact.d_raw"  "../contact.c"
+Finished building: "../contact.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../led.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="led.d_raw"  "../led.c"
+Finished building: "../led.c"
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../contact.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="contact.d_raw"  "../contact.c"
+Finished building: "../contact.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../contact.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="contact.d_raw"  "../contact.c"
+Finished building: "../contact.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: '2_GPIO_BUTTON.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: '2_GPIO_BUTTON.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../contact.c"
+Invoking: ARM Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/OneDrive - Confederation College/Developer/Workspace/workspace_arm/2_GPIO_BUTTON" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="contact.d_raw"  "../contact.c"
+Finished building: "../contact.c"
+ 
+Building target: "2_GPIO_BUTTON.out"
+Invoking: ARM Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"2_GPIO_BUTTON.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-arm_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="2_GPIO_BUTTON_linkInfo.xml" --rom_model -o "2_GPIO_BUTTON.out" "./contact.obj" "./led.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "2_GPIO_BUTTON.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project 2_GPIO_BUTTON ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: '2_GPIO_BUTTON.out' is up to date.
+
+**** Build Finished ****

@@ -3,6 +3,7 @@
 
 void CONTACT_Init(CONTACT *pContact, uint32_t uiWindow, uint8_t uiPort, uint8_t uiBit)
 {
+    bool bResult = true;
     pContact->uiPort = uiPort;
     pContact->uiBit = uiBit;
 
@@ -27,36 +28,41 @@ void CONTACT_Init(CONTACT *pContact, uint32_t uiWindow, uint8_t uiPort, uint8_t 
     case 5: // Port F
         pContact->uiPortAddress = GPIO_PORTF_BASE;
         break;
+    default:
+        bResult = false;
+        break;
     }
 
-    // configure port and pins for the switch
-    HWREG(SYSCTL_RCGCGPIO_R) = (1 << pContact->uiPort);
-    // configure direction register for port-f pin
-    HWREG(GPIO_PORTF_BASE + GPIO_O_DIR) &= ~(1 << pContact->uiBit);
-    // configure PUR register for PORTF pin 4
-    // (PUR register needs lock register and commit register configured)
-    HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = GPIO_O_LOCKKEY;
-    HWREG(GPIO_PORTF_BASE + GPIO_O_CR) |= pContact->uiBit;
-    HWREG(GPIO_PORTF_BASE + GPIO_O_PUR) |= pContact->uiBit;
-    // configure direction register for PORTF pin
-    HWREG(GPIO_PORTF_BASE + GPIO_O_DEN) |= pContact->uiBit;
+    if (bResult == true)
+    {
+        // configure port and pins for the switch
+        HWREG(SYSCTL_RCGCGPIO) |= (1 << pContact->uiPort);
+        // configure direction register for PORTF pin
+        HWREG(pContact->uiPortAddress + GPIO_O_DEN) |= (1 << pContact->uiBit);
+        // configure direction register for port-f pin
+        HWREG(pContact->uiPortAddress + GPIO_O_DIR) &= ~(1 << pContact->uiBit);
+        // PUR register needs lock register and commit register configured
+        HWREG(pContact->uiPortAddress + GPIO_O_LOCK) = GPIO_O_LOCKKEY;
+        HWREG(pContact->uiPortAddress + GPIO_O_CR)  |= (1 << pContact->uiBit);
+        HWREG(pContact->uiPortAddress + GPIO_O_PUR) |= (1 << pContact->uiBit);
 
-    // configure contact de-bounce states
-    pContact->bCurrentState = 0;
-    pContact->bPreviousState = 0;
+        // configure contact de-bounce states
+        pContact->bCurrentState = 0;
+        pContact->bPreviousState = 0;
 
-    pContact->uiCount = 0;
-    pContact->uiWindow = uiWindow;
+        pContact->uiCount = 0;
+        pContact->uiWindow = uiWindow;
 
-    pContact->bEventState = 0;
-    pContact->bEvent = 0;
-    pContact->bReserved = 0;
+        pContact->bEventState = 0;
+        pContact->bEvent = 0;
+        pContact->bReserved = 0;
+    }
 }
 
 bool CONTACT_Sample(CONTACT *pContact)
 {
     // Read current state
-    pContact->bCurrentState = !!HWREG(GPIO_PORTF_BASE + GPIO_O_DATA + (PUSH_BUTTON << 2));
+    pContact->bCurrentState = !!HWREG(pContact->uiPortAddress + GPIO_O_DATA + ((1 << pContact->uiBit) << 2));
 
     // Update counter if the contact has stabilized. If not, reset counter
     if (pContact->bCurrentState ^ pContact->bPreviousState)
