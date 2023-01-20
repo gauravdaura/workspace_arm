@@ -1847,3 +1847,35 @@ java.lang.NullPointerException
 !ENTRY com.ti.ccstudio.debug 1 0 2023-01-19 18:59:28.370
 !MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40025524 on Page 0 of Length 0x4a: Debug Port error occurred.
 
+
+!ENTRY com.ti.ccstudio.debug 1 0 2023-01-19 19:06:11.852
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40025524 on Page 0 of Length 0x4a: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2023-01-19 19:06:11.858
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40025524 on Page 0 of Length 0x4a: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2023-01-19 19:06:12.167
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40025524 on Page 0 of Length 0x4a: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2023-01-19 19:07:42.846
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40025524 on Page 0 of Length 0x4a: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2023-01-19 19:07:42.854
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40025524 on Page 0 of Length 0x4a: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2023-01-19 19:07:43.495
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40025524 on Page 0 of Length 0x4a: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2023-01-19 19:07:46.848
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40025524 on Page 0 of Length 0x4a: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2023-01-19 19:07:47.504
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Reading Memory Block at 0x40025524 on Page 0 of Length 0x4a: Debug Port error occurred.
+

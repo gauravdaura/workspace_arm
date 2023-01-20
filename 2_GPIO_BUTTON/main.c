@@ -1,16 +1,24 @@
 #include <stdio.h>
 #include <stdint.h>
-#include "hwdef.h"
-#include "contact.h"
 
-void Initialize(void);
+#define HWREG(x)            (*(( volatile unsigned long *) (x)))
 
-CONTACT g_SW1;
+#define SYSCTL_RCGCGPIO_R   0x400FE608
+#define GPIO_PORTF_BASE     0x40025000
+#define GPIO_O_DATA         0x00000000
+#define GPIO_O_DIR          0x00000400
+#define GPIO_O_DEN          0x0000051C
+#define GPIO_O_PUR          0x00000510
+#define GPIO_O_LOCK         0x00000520
+#define GPIO_O_CR           0x00000524
+
+#define GPIO_O_LOCKKEY      0x4C4F434B 
+#define LED_ON1             0x02
+#define PUSH_BUTTON         0x10
 
 int main(void)
 {
-    Initialize();
-    
+    uint32_t state = 0;
     // enable clock for button
     HWREG(SYSCTL_RCGCGPIO_R) = 0x20;
     // configure dir reg portf pin 1 as output and pin 4 as input
@@ -25,17 +33,9 @@ int main(void)
     // set data reg
     while (1)
     {
-        if (CONTACT_Sample(&g_SW1))
+        if (!HWREG(GPIO_PORTF_BASE + GPIO_O_DATA + (PUSH_BUTTON << 2)))
         {
-            if (g_SW1.bEventState == 0)
-            {
-                HWREG(GPIO_PORTF_BASE + GPIO_O_DATA + (LED_ON1 << 2)) ^= LED_ON1;
-            }
+            HWREG(GPIO_PORTF_BASE + GPIO_O_DATA + (LED_ON1 << 2)) ^= LED_ON1;
         }
     }
-}
-
-void Initialize(void)
-{
-    CONTACT_Init(&g_SW1, 100);
 }
