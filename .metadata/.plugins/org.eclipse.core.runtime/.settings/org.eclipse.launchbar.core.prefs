@@ -1,7 +1,9 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:1_GPIO_LED
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:2_GPIO_BUTTON
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:1_GPIO_LED/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:1_GPIO_LED/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:2_GPIO_BUTTON/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:2_GPIO_BUTTON/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
