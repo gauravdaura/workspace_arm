@@ -7,6 +7,7 @@
 void Initialize(void);
 
 CONTACT g_SW1;
+CONTACT g_SW2;
 
 int main(void)
 {
@@ -21,6 +22,13 @@ int main(void)
                 LED_Toggle();
             }
         }
+        if (CONTACT_Sample(&g_SW2))
+        {
+            if (g_SW2.bEventState == 0)
+            {
+                LED_Toggle();
+            }
+        }
     }
 }
 
@@ -28,4 +36,5 @@ void Initialize(void)
 {
     LED_Init();
     CONTACT_Init(&g_SW1, 100, 5, 4);
+    CONTACT_Init(&g_SW2, 100, 5, 0);
 }

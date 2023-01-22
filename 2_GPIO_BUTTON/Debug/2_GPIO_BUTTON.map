@@ -1,31 +1,31 @@
 ******************************************************************************
                   TI ARM Linker PC v18.12.1                    
 ******************************************************************************
->> Linked Fri Jan 20 18:18:58 2023
+>> Linked Sat Jan 21 16:14:45 2023
 
 OUTPUT FILE NAME:   <2_GPIO_BUTTON.out>
-ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 00000545
+ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 00000571
 
 
 MEMORY CONFIGURATION
 
          name            origin    length      used     unused   attr    fill
 ----------------------  --------  ---------  --------  --------  ----  --------
-  FLASH                 00000000   00040000  000005b2  0003fa4e  R  X
-  SRAM                  20000000   00008000  00000218  00007de8  RW X
+  FLASH                 00000000   00040000  000005de  0003fa22  R  X
+  SRAM                  20000000   00008000  00000230  00007dd0  RW X
 
 
 SEGMENT ALLOCATION MAP
 
 run origin  load origin   length   init length attrs members
 ----------  ----------- ---------- ----------- ----- -------
-00000000    00000000    000005b4   000005b4    r-x
+00000000    00000000    000005e4   000005e4    r-x
   00000000    00000000    0000026c   0000026c    r-- .intvecs
-  0000026c    0000026c    00000332   00000332    r-x .text
-  000005a0    000005a0    00000014   00000014    r-- .cinit
-20000000    20000000    00000218   00000000    rw-
+  0000026c    0000026c    0000035e   0000035e    r-x .text
+  000005d0    000005d0    00000014   00000014    r-- .cinit
+20000000    20000000    00000230   00000000    rw-
   20000000    20000000    00000200   00000000    rw- .stack
-  20000200    20000200    00000018   00000000    rw- .bss
+  20000200    20000200    00000030   00000000    rw- .bss
 
 
 SECTION ALLOCATION MAP
@@ -36,27 +36,28 @@ section   page    origin      length       input sections
 .intvecs   0    00000000    0000026c     
                   00000000    0000026c     tm4c123gh6pm_startup_ccs.obj (.intvecs)
 
-.text      0    0000026c    00000332     
+.text      0    0000026c    0000035e     
                   0000026c    0000021c     contact.obj (.text)
-                  00000488    00000044     rtsv7M4_T_le_v4SPD16_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit:__TI_auto_init_nobinit_nopinit)
-                  000004cc    0000003c     led.obj (.text)
-                  00000508    0000003c     main.obj (.text)
-                  00000544    00000034     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.text:_c_int00_noargs:_c_int00_noargs)
-                  00000578    00000012                                   : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init_nomemset:__TI_zero_init_nomemset)
-                  0000058a    0000000c     tm4c123gh6pm_startup_ccs.obj (.text)
-                  00000596    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.c.obj (.text:_system_pre_init)
-                  0000059a    00000004                                   : exit.c.obj (.text:abort:abort)
+                  00000488    00000068     main.obj (.text)
+                  000004f0    00000044     rtsv7M4_T_le_v4SPD16_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit:__TI_auto_init_nobinit_nopinit)
+                  00000534    0000003c     led.obj (.text)
+                  00000570    00000034     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.text:_c_int00_noargs:_c_int00_noargs)
+                  000005a4    00000012                                   : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init_nomemset:__TI_zero_init_nomemset)
+                  000005b6    0000000c     tm4c123gh6pm_startup_ccs.obj (.text)
+                  000005c2    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.c.obj (.text:_system_pre_init)
+                  000005c6    00000004                                   : exit.c.obj (.text:abort:abort)
 
-.cinit     0    000005a0    00000014     
-                  000005a0    00000008     (.cinit..bss.load) [load image, compression = zero_init]
-                  000005a8    00000004     (__TI_handler_table)
-                  000005ac    00000008     (__TI_cinit_table)
+.cinit     0    000005d0    00000014     
+                  000005d0    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  000005d8    00000004     (__TI_handler_table)
+                  000005dc    00000008     (__TI_cinit_table)
 
 .init_array 
 *          0    00000000    00000000     UNINITIALIZED
 
-.bss       0    20000200    00000018     UNINITIALIZED
+.bss       0    20000200    00000030     UNINITIALIZED
                   20000200    00000018     (.common:g_SW1)
+                  20000218    00000018     (.common:g_SW2)
 
 .stack     0    20000000    00000200     UNINITIALIZED
                   20000000    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.stack)
@@ -69,10 +70,10 @@ MODULE SUMMARY
     .\
        tm4c123gh6pm_startup_ccs.obj   12     620       0      
        contact.obj                    540    0         0      
-       main.obj                       60     0         24     
+       main.obj                       104    0         48     
        led.obj                        60     0         0      
     +--+------------------------------+------+---------+---------+
-       Total:                         672    620       24     
+       Total:                         716    620       48     
                                                               
     C:\ti\ccs901\ccs\tools\compiler\ti-cgt-arm_18.12.1.LTS\lib\rtsv7M4_T_le_v4SPD16_eabi.lib
        autoinit.c.obj                 68     0         0      
@@ -86,18 +87,18 @@ MODULE SUMMARY
        Stack:                         0      0         512    
        Linker Generated:              0      20        0      
     +--+------------------------------+------+---------+---------+
-       Grand Total:                   818    640       536    
+       Grand Total:                   862    640       560    
 
 
 LINKER GENERATED COPY TABLES
 
-__TI_cinit_table @ 000005ac records: 1, size/record: 8, table size: 8
-	.bss: load addr=000005a0, load size=00000008 bytes, run addr=20000200, run size=00000018 bytes, compression=zero_init
+__TI_cinit_table @ 000005dc records: 1, size/record: 8, table size: 8
+	.bss: load addr=000005d0, load size=00000008 bytes, run addr=20000200, run size=00000030 bytes, compression=zero_init
 
 
 LINKER GENERATED HANDLER TABLE
 
-__TI_handler_table @ 000005a8 records: 1, size/record: 4, table size: 4
+__TI_handler_table @ 000005d8 records: 1, size/record: 4, table size: 4
 	index: 0, handler: __TI_zero_init
 
 
@@ -105,38 +106,39 @@ GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name
 
 address   name                          
 -------   ----                          
-0000059b  C$$EXIT                       
+000005c7  C$$EXIT                       
 0000026d  CONTACT_Init                  
 000003a9  CONTACT_Sample                
-00000529  Initialize                    
-000004cd  LED_Init                      
-000004ed  LED_Toggle                    
-0000058b  ResetISR                      
+000004bf  Initialize                    
+00000535  LED_Init                      
+00000555  LED_Toggle                    
+000005b7  ResetISR                      
 20000200  __STACK_END                   
 00000200  __STACK_SIZE                  
 20000200  __STACK_TOP                   
-000005ac  __TI_CINIT_Base               
-000005b4  __TI_CINIT_Limit              
-000005a8  __TI_Handler_Table_Base       
-000005ac  __TI_Handler_Table_Limit      
-00000489  __TI_auto_init_nobinit_nopinit
+000005dc  __TI_CINIT_Base               
+000005e4  __TI_CINIT_Limit              
+000005d8  __TI_Handler_Table_Base       
+000005dc  __TI_Handler_Table_Limit      
+000004f1  __TI_auto_init_nobinit_nopinit
 ffffffff  __TI_pprof_out_hndl           
 ffffffff  __TI_prof_data_size           
 ffffffff  __TI_prof_data_start          
 00000000  __TI_static_base__            
-00000579  __TI_zero_init_nomemset       
+000005a5  __TI_zero_init_nomemset       
 ffffffff  __binit__                     
 ffffffff  __c_args__                    
 UNDEFED   __mpu_init                    
 20000000  __stack                       
-00000545  _c_int00_noargs               
+00000571  _c_int00_noargs               
 UNDEFED   _system_post_cinit            
-00000597  _system_pre_init              
-0000059b  abort                         
+000005c3  _system_pre_init              
+000005c7  abort                         
 ffffffff  binit                         
 20000200  g_SW1                         
+20000218  g_SW2                         
 00000000  g_pfnVectors                  
-00000509  main                          
+00000489  main                          
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
@@ -148,25 +150,26 @@ address   name
 00000200  __STACK_SIZE                  
 0000026d  CONTACT_Init                  
 000003a9  CONTACT_Sample                
-00000489  __TI_auto_init_nobinit_nopinit
-000004cd  LED_Init                      
-000004ed  LED_Toggle                    
-00000509  main                          
-00000529  Initialize                    
-00000545  _c_int00_noargs               
-00000579  __TI_zero_init_nomemset       
-0000058b  ResetISR                      
-00000597  _system_pre_init              
-0000059b  C$$EXIT                       
-0000059b  abort                         
-000005a8  __TI_Handler_Table_Base       
-000005ac  __TI_CINIT_Base               
-000005ac  __TI_Handler_Table_Limit      
-000005b4  __TI_CINIT_Limit              
+00000489  main                          
+000004bf  Initialize                    
+000004f1  __TI_auto_init_nobinit_nopinit
+00000535  LED_Init                      
+00000555  LED_Toggle                    
+00000571  _c_int00_noargs               
+000005a5  __TI_zero_init_nomemset       
+000005b7  ResetISR                      
+000005c3  _system_pre_init              
+000005c7  C$$EXIT                       
+000005c7  abort                         
+000005d8  __TI_Handler_Table_Base       
+000005dc  __TI_CINIT_Base               
+000005dc  __TI_Handler_Table_Limit      
+000005e4  __TI_CINIT_Limit              
 20000000  __stack                       
 20000200  __STACK_END                   
 20000200  __STACK_TOP                   
 20000200  g_SW1                         
+20000218  g_SW2                         
 ffffffff  __TI_pprof_out_hndl           
 ffffffff  __TI_prof_data_size           
 ffffffff  __TI_prof_data_start          
@@ -176,4 +179,4 @@ ffffffff  binit
 UNDEFED   __mpu_init                    
 UNDEFED   _system_post_cinit            
 
-[32 symbols]
+[33 symbols]
