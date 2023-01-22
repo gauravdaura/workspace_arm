@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "hwdef.h": "c"
+        "hwdef.h": "c",
+        "timer.h": "c"
     }
 }
