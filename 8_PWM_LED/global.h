@@ -1,6 +1,6 @@
 #include <stdint.h>
 
-#define LED_BLUE	        0x02
+#define LED_BLUE	        0x04
 #define PORTF               0x20
 
 #define SYSFLAGS_SYSTICK    0

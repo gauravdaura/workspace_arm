@@ -10,8 +10,9 @@ void PWM_Init(void)
     SYSCTL_RCGCGPIO_R   |=  PORTF;
     // 5. Configure the Run-Mode Clock Configuration (RCC) register in the System Control module
     // to use the PWM divide (USEPWMDIV) and set the divider (PWMDIV) to divide by 2 (000).
-    SYSCTL_RCC_R        |=  (1 << 20);
-    SYSCTL_RCC_R        |=  0x000E0000;
+     SYSCTL_RCC_R        |=  (1 << 20);
+     SYSCTL_RCC_R        |=  0x000E0000;
+//    SYSCTL_RCC_R        &=  ~(0x1e << 16);
     // 3. In the GPIO module, enable the appropriate pins for their alternate function using the
     // GPIOAFSEL register. To determine which GPIOs to configure, see Table 23-4 on page 1344.
     GPIO_PORTF_AFSEL_R  |=  LED_BLUE;
@@ -29,10 +30,12 @@ void PWM_Init(void)
     // 7. Set load value for 50Hz 16MHz/65 = 250kHz and (250KHz/5000)
     // Use this value to set the PWM0LOAD register. In Count-Down mode, set the LOAD field in the
     // PWM0LOAD register to the requested period minus one.
-    PWM1_3_LOAD_R       =   5000;
+//     PWM1_3_LOAD_R       =   5000;
+    PWM1_3_LOAD_R       =   1024-1;
     // 8. Set the pulse width of the MnPWM0 pin to minimum initially.
     // Write the PWM0CMPA register
-    PWM1_3_CMPA_R       =   4999;
+//     PWM1_3_CMPA_R       =   4999;
+    PWM1_3_CMPA_R       =   1024-1;
     // 10. Start the timers in PWM generator 0.
     // Write the PWM0CTL register with a value of 0x0000.0001.
     PWM1_3_CTL_R        |=  0x01;
