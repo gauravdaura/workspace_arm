@@ -1,19 +1,26 @@
+#include <stdint.h>
+
 #include "hwdef.h"
 #include "uart.h"
+
+void printString(char* str);
 
 int main()
 {
     // Initialize
     UART_Init();
+    LED_Init();
 
     // Transmit
-    while (1)
+    printString("Enter the command:");
+
+    for(;;);
+}
+
+void printString(char* str)
+{
+    while(*str)
     {
-        UART_Transmit('H');
-        UART_Transmit('E');
-        UART_Transmit('L');
-        UART_Transmit('L');
-        UART_Transmit('O');
-        UART_Transmit('\n');
+        UART_Transmit(*str++);
     }
 }

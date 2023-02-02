@@ -1,5 +1,7 @@
 #include "hwdef.h"
 #include "uart.h"
+#include "led.h"
+#include "global.h"
 #include <stdint.h>
 
 void UART_Transmit(char data)
@@ -8,14 +10,34 @@ void UART_Transmit(char data)
     UART0_DR_R = data;
 }
 
- char UART_Recieve(void)
+ void UART_IntHandler(void)
  {
-     char data;
-     while ((UART0_FR_R & (1 << 4)) != 0);
-     data = (unsigned char)UART0_DR_R;
+    uint32_t uiIntStatus = UART0_MIS_R;
+    uint8_t uidata;
 
-     return data;
- }
+    // Check Receive Interrupt
+    if (uiIntStatus & (1 << 4))
+    {
+        // Clear the interrupt
+        UART0_ICR_R     &= ~(1 << 4);
+
+        // Read Data
+        uidata = (unsigned char)UART0_DR_R;
+
+        // Control Input
+        if (uidata == 'A')
+        {
+            LED_Control(1);
+        }
+        else
+        {
+            LED_Control(0);
+        }
+    }
+
+    UART_Transmit(uidata);
+}
+
 
 void UART_Init(void)
 {
@@ -46,4 +68,7 @@ void UART_Init(void)
     UART0_FR_R           = 0;
     // 7. Enable the UART by setting the UARTEN bit in the UARTCTL register
     UART0_CTL_R          = (1 << 0) | (1 << 8) | (1 << 9);
+
+    UART0_IM_R           |=  (1 << 4);
+    NVIC_EN0_R           |=  (1 << 5);
 }
